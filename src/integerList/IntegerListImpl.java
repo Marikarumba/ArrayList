@@ -136,7 +136,7 @@ public class IntegerListImpl implements IntegerList {
         return s;
     }
     private void grow() {
-        data = Arrays.copyOf(data, data.length + 1);
+        data = Arrays.copyOf(data, data.length * 2 + 1);
     }
 
     private void checkIndex(int index) {
